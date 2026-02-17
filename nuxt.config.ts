@@ -26,6 +26,14 @@ export default defineNuxtConfig({
     },
   },
 
+  scripts: {
+    registry: {
+      googleTagManager: {
+        id: "GTM-PJ72N4LZ",
+      },
+    },
+  },
+
   shadcn: {
     /**
      * Prefix for all the imported component.

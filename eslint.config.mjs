@@ -6,6 +6,7 @@ export default withNuxt(
   {
     rules: {
       "vue/html-self-closing": "off",
+      "indent": ["error", 2],
     },
   },
 )

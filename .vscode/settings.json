@@ -33,4 +33,5 @@
     "Nuxt",
     "vueuse"
   ],
+  "cSpell.enabled": false,
 }
