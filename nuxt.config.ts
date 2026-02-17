@@ -30,7 +30,8 @@ export default defineNuxtConfig({
     registry: {
       googleTagManager: {
         id: "GTM-PJ72N4LZ",
-        debug: true,
+        defer: true,
+        strategy: "lazyOnload",
       },
     },
   },
