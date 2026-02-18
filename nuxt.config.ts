@@ -8,9 +8,18 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "@nuxt/scripts",
   ],
+
+  ssr: true,
   devtools: { enabled: true },
   css: ["~/assets/css/tailwind.css"],
   compatibilityDate: "2025-07-15",
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+
+    },
+  },
 
   vite: {
     plugins: [
@@ -30,8 +39,12 @@ export default defineNuxtConfig({
     registry: {
       googleTagManager: {
         id: "GTM-PJ72N4LZ",
-        defer: true,
-        strategy: "lazyOnload",
+        defer: false,
+        enabled: true,
+        async: true,
+        scriptInput: {
+          src: "https://gtm-nuxt-scripts.netlify.app/gtm.js",
+        },
       },
     },
   },
