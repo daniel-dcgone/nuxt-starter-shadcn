@@ -37,15 +37,12 @@ export default defineNuxtConfig({
 
   scripts: {
     registry: {
-      googleTagManager: {
+      googleTagManager: [{
         id: "GTM-PJ72N4LZ",
-        defer: false,
-        enabled: true,
-        async: true,
-        scriptInput: {
-          src: "https://gtm-nuxt-scripts.netlify.app/gtm.js",
-        },
-      },
+
+      }, {
+        trigger: { idleTimeout: 3000 },
+      }],
     },
   },
 
