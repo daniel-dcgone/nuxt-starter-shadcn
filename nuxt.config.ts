@@ -37,12 +37,9 @@ export default defineNuxtConfig({
 
   scripts: {
     registry: {
-      googleTagManager: [{
+      googleTagManager: {
         id: "GTM-PJ72N4LZ",
-
-      }, {
-        trigger: { idleTimeout: 3000 },
-      }],
+      },
     },
   },
 
